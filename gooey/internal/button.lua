@@ -24,6 +24,7 @@ function M.button(node_id, action_id, action, fn, refresh_fn)
 	button.enabled = core.is_enabled(node)
 	button.node = node
 	button.refresh_fn = refresh_fn
+	button.node_id = node_id
 
 	if not action then
 		button.refresh()

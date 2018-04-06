@@ -47,6 +47,7 @@ function M.input(node_id, keyboard_type, action_id, action, config, refresh_fn)
 	input.enabled = core.is_enabled(node)
 	input.node = node
 	input.refresh_fn = refresh_fn
+	input.node_id = node_id
 
 	local over = gui.pick_node(node, action.x, action.y)
 	input.over_now = over and not input.over

@@ -33,6 +33,7 @@ function M.button(node_id, group_id, action_id, action, fn, refresh_fn)
 	radio.node = node
 	radio.group = group_id and core.to_key(group_id)
 	radio.refresh_fn = refresh_fn
+	radio.node_id = node_id
 
 	if not action then
 		radio.refresh()

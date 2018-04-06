@@ -28,6 +28,7 @@ function M.checkbox(node_id, action_id, action, fn, refresh_fn)
 	checkbox.enabled = core.is_enabled(node)
 	checkbox.node = node
 	checkbox.refresh_fn = refresh_fn
+	checkbox.node_id = node_id
 
 	if not action then
 		checkbox.refresh()
